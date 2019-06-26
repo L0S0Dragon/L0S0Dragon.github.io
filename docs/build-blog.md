@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Blogging using Jekyll along with Github page"
-date:   2019-05-28 11:18:21 +0800
-categories: jekyll update
+title:  Brief summary of building blog with Jekyll  
+date:   2019-06-26 15:40:06 +0800
+categories:  Technical_documentation
+Tags: Jekyll MathJax 
 nav_order: 2
 ---
-# Navigation Structure
+# Brief summary of building blog with Jekyll  
 {: .no_toc }
 
 ## Table of contents
@@ -17,9 +18,9 @@ nav_order: 2
 ## Set up the environment 
 
 + Install homebrew 
-+ Install rbenv and ruby-build (brew install rbenv ruby-build)
-+ Install a Ruby version (rbenv install 2.6.0)
-+ Set the global ruby version (rbenv global 2.6.0)
++ Install rbenv and ruby-build  (brew install rbenv ruby-build\)
++ Install a Ruby version  ( rbenv install 2.6.0 )
++ Set the global ruby version ( rbenv global 2.6.0 )
 + Restart your Mac
 
 See more for [set of environment][set-of-environment]  
@@ -69,5 +70,48 @@ git push -u origin master
 [jekyll-theme]:https://jekyllthemes.io/theme/
 [usage documentation]:https://jekyllrb.com/docs/
 
-##Install mathjax
-[Link button](http://example.com/){: .btn }
+## Install mathjax
++ Create new file named as mathjax_support in   _ include   directory as follows:
+```
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+```
+
++ Add following part to your layouts
+
+```
+<head>
+  { % include mathjax_support  %}
+<head>
+```
++ Test mathjax with schrodinger equation
+
+
+$$
+\{-\frac{\hbar^2}{2m} \nabla^2 +V(\vec{r})\}\psi(\vec r )=E\psi(\vec{r})
+$$
+
+## Finish Home page, About page 
+{: .no_toc }
+
+**DONE 😊** 
+
+This summary is very short, a lot of detail are dropped. If you have some problems trying to following it, you can find explicit instructions in corresponding links.
+
+[Comment system coming soon](http://example.com/){: .btn }
+
