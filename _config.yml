@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: 拾慧集
 description: This blog is mainly used to record my learning notes in physics.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+#baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://l0s0dragon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 markdown: kramdown
