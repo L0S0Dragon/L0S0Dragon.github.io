@@ -4,7 +4,7 @@ title:  Brief summary of building blog with Jekyll
 date:   2019-06-26 15:40:06 +0800
 categories:  Technical_documentation
 Tags: Jekyll MathJax 
-nav_order: 2
+nav_order: 3
 ---
 # Brief summary of building blog with Jekyll  
 {: .no_toc }
