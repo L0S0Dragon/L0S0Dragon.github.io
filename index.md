@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 首页
+title: HOME
 date: 2019-06-26 16:47:06 +0800
 categories: 随记
 nav_order: 1
